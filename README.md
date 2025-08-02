@@ -1,2 +1,14 @@
-# c-data-structures
-Repository to study data structures in C
+# c-dsa
+Data structures and algorithms in C
+
+# Execute hashtable
+
+### Build project
+```sh
+gcc main.c -o main
+```
+
+### Run project
+```sh
+./main
+```
