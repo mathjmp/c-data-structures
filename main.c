@@ -1,25 +1,15 @@
 #include <stdio.h>
 #include "queue/queue.c"
+#include "binarytree/binarytree.c"
 
 int main() {
 
-    int capacity = 5;
-    queue *queue = new_queue(capacity);
+    node *root = new_node(0);
+    node *left = new_node(1);
+    node *right = new_node(2);
 
-    enqueue(queue, 10);
-    enqueue(queue, 20);
-    enqueue(queue, 30);
-    enqueue(queue, 40);
-    enqueue(queue, 50);
-    dequeue(queue);
-    enqueue(queue, 60);
-    dequeue(queue);
-    dequeue(queue);
-    dequeue(queue);
-    dequeue(queue);
-    dequeue(queue);
-    enqueue(queue, 100);
-    enqueue(queue, 200);
-    enqueue(queue, 300);
-    show_queue(queue);
+    root->left = left;
+    root->right = right;
+
+    pre_order_traversal(root);
 }
