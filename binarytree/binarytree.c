@@ -21,3 +21,16 @@ void pre_order_traversal(node* node) {
         pre_order_traversal(node->right);
     }
 }
+
+void in_order_traversal(node *node) {
+
+    if (node->left != NULL) {
+        in_order_traversal(node->left);
+    }
+
+    printf("%d\n", node->data);
+
+    if (node->right != NULL) {
+        in_order_traversal(node->right);
+    }
+}
