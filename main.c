@@ -11,5 +11,5 @@ int main() {
     root->left = left;
     root->right = right;
 
-    pre_order_traversal(root);
+    in_order_traversal(root);
 }
