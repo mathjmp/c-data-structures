@@ -34,3 +34,16 @@ void in_order_traversal(node *node) {
         in_order_traversal(node->right);
     }
 }
+
+void post_order_traversal(node *node) {
+   
+    if (node->left != NULL) {
+        post_order_traversal(node->left);
+    }
+
+    if (node->rigth != NULL) {
+        post_order_traversal(node->right);
+    }
+
+    printf("%d\n", node->data);
+}
