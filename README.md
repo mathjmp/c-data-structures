@@ -1,5 +1,5 @@
 # c-dsa
-Data structures and algorithms in C
+Data structures in C
 
 # Execute hashtable
 
